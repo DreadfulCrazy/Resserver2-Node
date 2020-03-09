@@ -31,11 +31,11 @@ process.env.NODE_ENV = process.env.NODE_ENV ||'dev';
 
 let urlDB;
 
-if (process.env.NODE_ENV === 'dev') {
-    urlDB = 'mongodb://localhost:27017/cafe';
-}else{
+// if (process.env.NODE_ENV === 'dev') {
+//     urlDB = 'mongodb://localhost:27017/cafe';
+// }else{
     urlDB = process.env.MONGO_URI;
-}
+// }
 
 process.env.urlDB =urlDB;
 
@@ -44,4 +44,4 @@ process.env.urlDB =urlDB;
 // GOOGLE CLIENT ID                               
 //======================
 
-process.env.CLIENT_ID = process.env.CLIENT_ID || '698906896143-g4lkdu9u5bu30d8d9sok0j54pe2qpe2d.apps.googleusercontent.com';
+process.env.CLIENT_ID = process.env.CLIENT_ID || '698906896143-mkfposf89ej6367hmimqr0j2d0a9v4g8.apps.googleusercontent.com';

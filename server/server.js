@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 
 
 // carpeta public
-app.use(express.static(path.resolve(__dirname, '../public')));
+app.use(express.static(path.resolve(__dirname, '../public')));// path se usa cuando una carpeta esta fuera de la carpeta del servidor
 
 //Routes
 app.use(require('./routes/index'));
